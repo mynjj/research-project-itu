@@ -14,7 +14,7 @@
 \maketitle
 
 \begin{abstract}
-In this research project we address the problem of implementing a test selection algorithm on the Business Central project. For the scope of this project a single test selection algorithm was implemented, which is based on test coverage information. The findings of this work, should serve as foundation to explore different selection and prioritizations techniques in this system. Much of the work here presented went into understanding the context and setting of the system, sufficiently to execute the algorithm in real revision examples. The insights acquired provide a basis for future evaluation settings to increase the validity of the results here presented and of future algorithms to be evaluated.
+In this research project, we address the problem of implementing a test selection algorithm on the Business Central project. For the scope of this project, a single test selection algorithm was implemented, which is based on test coverage information. The findings of this work should serve as a foundation to explore the different selection and prioritizations techniques in this system. Much of the work presented here went into understanding the context and setting of the system, sufficiently to execute the algorithm in actual revision examples. The insights acquired provide a basis for future evaluation settings to increase the validity of the results here presented and of future algorithms to be evaluated.
 \end{abstract}
 
 \section{Introduction}
@@ -23,7 +23,7 @@ In this research project we address the problem of implementing a test selection
 
    For this reason, it is common for products to have the execution of the regression test suite as part of the main pipeline of the product. However, when systems are sufficiently large, it becomes very expensive to run the full suite of tests.
 
-   A test selection algorithm aims at choosing a subset of a full test suite to run, that is not as expensive as running all tests cases. However, it's important that this selection preserves the capabilities of fault detection that the full test suite has. This means that careful selection must be made, so that the confidence on fault detection is not lost because of not selecting some test cases.
+   A test selection algorithm aims at choosing a subset of a full test suite to run, that is not as expensive as running all tests cases. However, this selection must preserve the capabilities of fault detection that the full test suite has. This means that careful selection must be made so that the confidence in fault detection is not lost because of not selecting some test cases.
 
 \subsection{Business Central}
    Business Central is an ERP software system from Microsoft, it is a large software system, with different sets of tests for the diverse aspects of the product.
@@ -33,7 +33,7 @@ In this research project we address the problem of implementing a test selection
 \section{Test Selection Method}
 \subsection{Overview}\label{section:overview}
 
-The idea for the method explored on this resarch project is to use the line coverage information that each test case produces, and ``read it backwards'' when given a code change in those lines. That means than by looking at which lines were modified on a given change, given that we know which tests were affecting those particular lines then we know that we should select those tests.
+The idea for the method explored in this research project is to use the line coverage information that each test case produces, and ``read it backward'' when given a code change in those lines. That means that by looking at which lines were modified on a given change, given that we know which tests were affecting those particular lines then we know that we should select those tests.
 
 To further illustrate, see for example figure \ref{fig:diff}. Here we can see a \texttt{diff} of an AL code file on a given revision that added lines in between what previously were lines 30-31, and 39-40. Also what was previously line 29 was removed. Therefore, provided that we know which tests were hitting those lines, then we could propose them as tests to be selected.
 
@@ -43,7 +43,7 @@ To further illustrate, see for example figure \ref{fig:diff}. Here we can see a 
   \label{fig:diff}
 \end{figure}
 
-Intuitively, this seems like a good heuristic to select tests. However, we do not claim it is sufficient, furthermore examples can be shown where this heuristic fails. For example, when a part of the code is dependent on the side effects it produces; then changing the environment of it through the side effects of a revision, can cause a seemingly unrelated set of test cases to fail.
+Intuitively, this seems like a good heuristic to select tests. However, we do not claim it is sufficient, furthermore, examples can be shown where this heuristic fails. For example, when a part of the code is dependent on the side effects it produces; then changing the environment of it through the side effects of a revision, can cause a seemingly unrelated set of test cases to fail.
 
 This method is meant to provide a foundation for further explorations on selection methods using different criteria besides this straightforward heuristic. We describe the different ways we can extend this method on section \ref{section:future-work}.
 \subsection{AL background information}\label{section:al-background-info}
@@ -56,7 +56,7 @@ As mentioned in the introduction, AL is a DSL for this specific system and exten
 \item \emph{Codeunits}. Modules with \emph{procedures}, that is code that can be reused throughout the codebase
 \end{itemize}
 
-Each AL file in the codebase has as part of its definition, the type of object it is. Also relevant on its definition, is the usage of numeric IDs to identify the AL Objects. Each ID must be unique throughout the instance of the system containing it for such object type.
+Each AL file in the codebase has as part of its definition, the type of object it is. Also relevant to its definition is the usage of numeric IDs to identify the AL Objects. Each ID must be unique throughout the instance of the system containing it for such object type.
 
 To make things more concrete, figure \ref{fig:al-examples} shows an example of AL objects of types \emph{page} and \emph{table}. They are identified by both the type of object and ID, notice in this example, they share the same id, but they differ on the type of object.
 \begin{figure}[H]
@@ -88,7 +88,7 @@ Finally, we explain how scenario tests for AL code are defined. Unit and scenari
 
 
 \subsection{Coverage information of test runs on AL}\label{section:cov-info}
-AL provides primitives to record line coverage information, when executing arbitrary sections of code. This line coverage information has the following components, relevant for the selection method:
+AL provides primitives to record line coverage information when executing arbitrary sections of code. This line coverage information has the following components, relevant for the selection method:
 \begin{itemize}
 \item Object ID
 \item Object type
@@ -100,11 +100,11 @@ As explained in section \ref{section:al-background-info}, \emph{Object ID} and \
 
 It is relevant to stress that this information does not provide a file path on the codebase directly, but only a mean for identification.
 
-Currently on the system, this primitive is used throughout the execution of the test suite. This measures test coverage information, providing the set of objects and lines covered by the suite, and it is used to impose coverage requirements for new additions to the codebase.
+Currently on the system, this primitive is used throughout the execution of the test suite. These measures test coverage information, providing the set of objects and lines covered by the suite, and it is used to impose coverage requirements for new additions to the codebase.
 
-This means, that the information obtained by recording coverage throughout the complete execution of the test suite, does not distinguish between different test cases. The coverage information currently available on each run do not have which lines were hitted by a particular test, but it only determines that it was hit by some test on the test suite.
+This means, that the information obtained by recording coverage throughout the complete execution of the test suite, does not distinguish between different test cases. The coverage information currently available on each run does not have which lines were hit by a particular test, but it only determines that it was hit by some test on the test suite.
 
-However, previously in section \ref{section:overview}, we described the method as selecting those test cases which affected a particular set of lines. With the current test coverage information it is not possible to make that distinction.
+However, previously in section \ref{section:overview}, we described the method as selecting those test cases which affected a particular set of lines. With the current test coverage information, it is not possible to make that distinction.
 
 For this reason, changes on the test runner were needed, to allow for individual tracking of coverage information per test case. However, these changes are currently not on the main pipeline of the product \footnote{These changes were not work of the author, but from Nikola Kukrika nikolak@microsoft.com, as they are on the backlog to be added to the pipeline}.
 
@@ -227,7 +227,7 @@ This metric refers to the ratio of the failing test cases included out of the to
 \subsubsection{Selection size}
 For this metric, the ratio of the selected tests agains the total amount of tests is taken. Ideally, we would like this number to be as low as possible while detecting every failing test case.
 \subsubsection{Normalized APFD}
-Average of the Percentage of Faults Detected is another commonly used metric to measure the effectiveness of Test Prioritization algorithms. In this project we dealt with a Test Selection algorithm, however it can be understood as a Test Prioritization technique in the same way as explained in \ref{section:tffailure}.
+Average of the Percentage of Faults Detected is another commonly used metric to measure the effectiveness of Test Prioritization algorithms. First introduced by Rothermel et. al in \cite{TODO} In this project we dealt with a Test Selection algorithm, however it can be understood as a Test Prioritization technique in the same way as explained in \ref{section:tffailure}. % Prioritizing Test Cases for Regression Testing
 
 This metric measures the area under the curve of the plot of tests run against faults detected. The normalized version takes into account possibly not detecting faults, which is the case for a selection algorithm. For completeness the expression for computing it is given in (\ref{eq:napfd}).
 
@@ -276,9 +276,17 @@ The implemented technique here explored follows quite precisely the formulation 
 
 By using the \emph{Controlled-Regression-Testing Assumption} they are able to prove that modification-traversing selected tests cases are a superset of the possible fault-revealing tests cases. Such is an strong assumption, and in our case it does not hold, as we gave insight for in section \ref{section:overview}. There are faults that test cases reveal that are context-aware, they do not correspond to the execution traces of the test cases. For instance the real evaluation example described in section \ref{section:evaluation}.
 
-The algorithm they propose \emph{SelectTests} compare Control Flow Graphs (CFG) generated from each test case, and when different, select all the tests that reached such nodes. We can understand our approach as a lose approximation of this, we do not rely on generating a CFG for the execution of the new revision of test cases, but we directly interpret line operations on files as a difference and select the corresponding cases. We differ on how we decide whether or not execution traces of a test are equivalent.
+The algorithm they propose \emph{SelectTests} compares Control Flow Graphs (CFG) generated from each test case, and when different, select all the tests that reached such nodes. We can understand our approach as a lose approximation of this, we do not rely on generating a CFG for the execution of the new revision of test cases, but we directly interpret line operations on files as a difference and select the corresponding cases. We differ on how we decide whether or not execution traces of a test are equivalent.
 
-Work and terminology introduced by Rothermel and Harrold was foundational for the area and it has been used as a framework to communicate results in surveys and other papers. That is the case of another similar approach by Volkolos and Frankl, they also take \texttt{diff} information as input for their selection, in the same fashion they characterize each line operation, and associate a set of tests depending on the execution traces from previous revisions. The main differences with what here was presented is the preprocessing of revisions into a normal form to make negligible stylistic choices and have a better correspondence of lines with execution traces. This is a direction that could be interesting to explore, it is unknown to the author whether or not a normal representation is used somewhere in the compiling stages for AL.
+Work and terminology introduced by Rothermel and Harrold was foundational for the area and it has been used as a framework to communicate results in surveys and other papers. That is the case of another similar approach by Volkolos and Frankl, like in this project, they also take \texttt{diff} information as input for their selection; in the same fashion they characterize each line operation, and associate a set of tests depending on the execution traces from previous revisions. The main differences with what here was presented is the preprocessing of revisions into a normal form to make negligible stylistic choices, and to have a better correspondence between lines and execution traces. This is a direction that could be interesting to explore to increase the precision of selected test cases, it is unknown to the author whether or not a normal representation is used somewhere in the compiling stages for AL.
+
+The similarity between the CFG traversing approach of Rothermel and Harrold with the textual difference approach from Volkolos and Frankl was hinted when we compared how similar our approach was with the CFG approach. This was also observed by Yoo and Harman on their survey, noticing that the textual approach operated on a different representation of the system, but it's behaviour was in essence very similar.
+
+Another related approach that could hint a direction on extension of the technique here proposed is the work by Chen et. al. \cite{TODO} where the CFG is extended by changing the definition of how a program can be partitioned. Changing this representation allows for more entities to be considered. Extending the representation of AL files, and giving a way to relate coverage information with different representations could allow more information to be captured, increasing its safety.
+
+Another variant to this same idea of testing only what is changed based on differences, is the given by Leung and White with their firewall approach, which decompose the system in modules and groups of tests to execute when changes arise. This leads to a more conservative approach, and it also would require the definition of what woul be considered as a module.
+
+On the other hand, a more recent survey focuses on the techniques using Machine Learning algorithms, as they have been subject of much interest in recent years. Rather than comparing them with the proposed selection algorithm, we present some of the applicable techniques that were found, that would like to be focus of future work.
 
 
 
