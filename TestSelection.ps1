@@ -684,7 +684,6 @@ function Evaluate-TestSelection{
     [List[Tuple[int32, string]]] $tests = Run-TestSelection -CoverageDBFilePath $CodeCoverageDBBefore
     [CodeCoverage] $codeCoverage = [CodeCoverage]::new($CodeCoverageDBAfter)
 
-    Write-Host $tests
 
     # Test execution time
     $totalTime = 0
@@ -833,14 +832,16 @@ function Evaluate-InjectedFaults{
     $afterCodebasePath = "$faultPath/codebase"
 
     if($JustDiff.IsPresent){ # For diagnosis
-        git diff $beforeCodebasePath $afterCodebasePath -U0 --no-renames
+        git diff -U0 --no-renames $beforeCodebasePath $afterCodebasePath 
         return
     }
     [List[Tuple[int32, string]]] $selection = Run-TestSelection -RevisionBeforePath $beforeCodebasePath -RevisionAfterPath $afterCodebasePath -CoverageDBFilePath $coverageDBPath
 
     # We create a DB with only the results of the run afterwards
     $resultsDBPath = "$faultPath/testresultsdb.sqlite3"
-    Create-CoverageDB -TestRunnerOutputFolder "$faultPath/testrunner-output" -CoverageDBFilePath $resultsDBPath -OnlyResults
+    if(-not(Test-Path $resultsDBPath -PathType Leaf)){
+        Create-CoverageDB -TestRunnerOutputFolder "$faultPath/testrunner-output" -CoverageDBFilePath $resultsDBPath -OnlyResults
+    }
     [CodeCoverage] $resultsDB = [CodeCoverage]::new($resultsDBPath)
 
     # Evaluation
@@ -850,7 +851,7 @@ function Evaluate-InjectedFaults{
     $firstFailure = $true
     $testRank = 1
     $ranksSum = 0
-    #$omittedTests = @{}
+    $selectionFileContent = ''
     $selection | ForEach-Object {
         $testCodeunitId = $_.Item1
         $testProcedureName = $_.Item2
@@ -864,14 +865,10 @@ function Evaluate-InjectedFaults{
             $ps = $coverageDB.TestRunResults($testCodeunitId, $testProcedureName)
             if($ps.Item2 -eq 'Fail'){
                 Write-Host "> but it previously failed, ignoring"
-                # we store it, to omit it on posterior queries
-                #[string]$testProcedureIdOmmitedStr = $resultsDB.query("select tps.id from test_procedures as tps inner join tests as ts on tps.test_id=ts.id where tps.procedure_name='$testProcedureName' ts.codeunit_id=$testCodeunitId")
-                #[int32] $testProcedureIdOmmited= $testProcedureIdOmmitedStr
-                #Write-Host ">> $testProcedureIdOmmited"
-                #$omittedTests.Add($testProcedureIdOmmited, $true)
                 return
             }
         }
+        $selectionFileContent = "$selectionFileContent$testCodeunitId,$testProcedureName`n"
 
         $totalTime += $duration
         if($result -eq 'Fail'){
@@ -920,4 +917,5 @@ function Evaluate-InjectedFaults{
     $napfd = $inclusiveness - 100*$ranksSum/($totalTests*$totalFailures) + $inclusiveness/(2*$totalTests)
 
     "execTimeFull,$execTimeFull`nexecTimeFFail,$execTimeFFail`ninclusiveness,$inclusiveness`nselectionSize,$selectionSize`nnapfd,$napfd" | New-Item -Path "$faultPath/evaluation.csv" -ItemType File
+    $selectionFileContent | New-Item -Path "$faultPath/test-selection.csv" -ItemType File
 }
