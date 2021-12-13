@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  9 DEC 2021 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  13 DEC 2021 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -487,34 +487,34 @@ Package caption Info: End \AtBeginDocument code.
 <images/diff.png, id=12, 595.22375pt x 214.8025pt>
 File: images/diff.png Graphic file (type png)
 <use images/diff.png>
-Package pdftex.def Info: images/diff.png  used on input line 41.
+Package pdftex.def Info: images/diff.png  used on input line 40.
 (pdftex.def)             Requested size: 345.0pt x 124.5003pt.
  [2 <./images/diff.png>]
 <images/alpage.png, id=19, 357.83687pt x 154.07562pt>
 File: images/alpage.png Graphic file (type png)
 <use images/alpage.png>
-Package pdftex.def Info: images/alpage.png  used on input line 64.
+Package pdftex.def Info: images/alpage.png  used on input line 63.
 (pdftex.def)             Requested size: 156.49014pt x 67.38205pt.
 <images/altable.png, id=20, 373.395pt x 165.11688pt>
 File: images/altable.png Graphic file (type png)
 <use images/altable.png>
-Package pdftex.def Info: images/altable.png  used on input line 66.
+Package pdftex.def Info: images/altable.png  used on input line 65.
 (pdftex.def)             Requested size: 156.49014pt x 69.19995pt.
 <images/alcodeunit.png, id=21, 327.72438pt x 251.94125pt>
 File: images/alcodeunit.png Graphic file (type png)
 <use images/alcodeunit.png>
-Package pdftex.def Info: images/alcodeunit.png  used on input line 73.
+Package pdftex.def Info: images/alcodeunit.png  used on input line 72.
 (pdftex.def)             Requested size: 345.0pt x 265.2227pt.
  [3 <./images/alpage.png> <./images/altable.png>]
 <images/altestcodeunit.png, id=30, 300.62312pt x 113.42375pt>
 File: images/altestcodeunit.png Graphic file (type png)
 <use images/altestcodeunit.png>
-Package pdftex.def Info: images/altestcodeunit.png  used on input line 82.
+Package pdftex.def Info: images/altestcodeunit.png  used on input line 81.
 (pdftex.def)             Requested size: 156.49014pt x 59.04471pt.
 <images/altestscenario.png, id=31, 351.3125pt x 191.71625pt>
 File: images/altestscenario.png Graphic file (type png)
 <use images/altestscenario.png>
-Package pdftex.def Info: images/altestscenario.png  used on input line 84.
+Package pdftex.def Info: images/altestscenario.png  used on input line 83.
 (pdftex.def)             Requested size: 156.49014pt x 85.39975pt.
  [4 <./images/alcodeunit.png> <./images/altestcodeunit.png> <./images/altestsce
 nario.png>]
@@ -546,32 +546,76 @@ Package pdftex.def Info: images/testselection.png  used on input line 201.
 LaTeX Warning: Citation 'Pan2021TestCS' on page 10 undefined on input line 214.
 
 
+
+LaTeX Warning: Citation '962562' on page 10 undefined on input line 231.
+
 [10] [11]
 
-LaTeX Warning: Citation 'TODO' on page 12 undefined on input line 268.
+Package caption Warning: \label without proper reference on input line 263.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Citation 'Yoo2009RegressionTM' on page 12 undefined on input lin
-e 273.
+LaTeX Warning: Reference `fig:eval-alg-out' on page 12 undefined on input line 
+260.
 
 
-LaTeX Warning: Citation 'Pan2021TestCS' on page 12 undefined on input line 273.
+Package caption Warning: \label without proper reference on input line 274.
+See the caption package documentation for explanation.
 
 
-
-LaTeX Warning: Citation 'TODO' on page 12 undefined on input line 275.
+LaTeX Warning: Reference `fig:eval-failures' on page 12 undefined on input line
+ 260.
 
 [12]
-Overfull \hbox (2.3765pt too wide) in paragraph at lines 279--280
-[]\OT1/cmr/m/n/10 The al-go-rithm they pro-pose \OT1/cmr/m/it/10 Se-lectTests \
-OT1/cmr/m/n/10 com-pare Con-trol Flow Graphs (CFG)
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: \label without proper reference on input line 306.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:evaluation' on page 13 undefined on input line 
+321.
+
+
+LaTeX Warning: Citation 'TODO' on page 13 undefined on input line 325.
 
 [13]
 
-LaTeX Warning: Empty bibliography on input line 306.
+LaTeX Warning: Citation 'Yoo2009RegressionTM' on page 14 undefined on input lin
+e 330.
 
-[14] (./main.aux)
+
+LaTeX Warning: Citation 'Pan2021TestCS' on page 14 undefined on input line 330.
+
+
+
+LaTeX Warning: Citation 'TODO' on page 14 undefined on input line 332.
+
+[14]
+
+LaTeX Warning: Citation 'TODO' on page 15 undefined on input line 342.
+
+
+LaTeX Warning: Citation '6405252' on page 15 undefined on input line 346.
+
+
+LaTeX Warning: Citation 'Pan2021TestCS' on page 15 undefined on input line 348.
+
+
+[15]
+
+LaTeX Warning: Reference `' on page 16 undefined on input line 361.
+
+
+LaTeX Warning: Citation '6405252' on page 16 undefined on input line 361.
+
+[16]
+
+LaTeX Warning: Empty bibliography on input line 387.
+
+[17] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -588,13 +632,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11060 strings out of 478994
- 202889 string characters out of 5864751
- 915133 words of memory out of 5000000
- 28446 multiletter control sequences out of 15000+600000
+ 11067 strings out of 478994
+ 203004 string characters out of 5864751
+ 920325 words of memory out of 5000000
+ 28453 multiletter control sequences out of 15000+600000
  410269 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,10n,79p,899b,1130s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,10n,79p,1222b,1130s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -610,10 +654,10 @@ s/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
 s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (14 pages, 379768 bytes).
+Output written on main.pdf (17 pages, 393886 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 147 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
