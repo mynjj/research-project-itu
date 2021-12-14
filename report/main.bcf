@@ -2353,7 +2353,10 @@
     <bcf:citekey order="7">TODO</bcf:citekey>
     <bcf:citekey order="8">6405252</bcf:citekey>
     <bcf:citekey order="9">Pan2021TestCS</bcf:citekey>
-    <bcf:citekey order="10">6405252</bcf:citekey>
+    <bcf:citekey order="10">MAHDIEH2020106269</bcf:citekey>
+    <bcf:citekey order="11">10.1109/ICSE.2019.00055</bcf:citekey>
+    <bcf:citekey order="12">10.1145/3180155.3180210</bcf:citekey>
+    <bcf:citekey order="13">6405252</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

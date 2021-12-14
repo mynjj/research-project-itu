@@ -1,0 +1,353 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{6405252}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=a51b8297b1d6deddabf3ebc6be688220}{%
+           family={Beszédes},
+           familyi={B\bibinitperiod},
+           given={Árpád},
+           giveni={Á\bibinitperiod}}}%
+        {{hash=02dab0dd22f2ff0da68d0efe48d247ec}{%
+           family={Gergely},
+           familyi={G\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=877cf8f46326d3d9954b2004ffdd5c0a}{%
+           family={Schrettner},
+           familyi={S\bibinitperiod},
+           given={Lajos},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fd1ddd59189e41fff1e3539a6824680d}{%
+           family={Jász},
+           familyi={J\bibinitperiod},
+           given={Judit},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6ef12d0a3a78717793a234973ea81593}{%
+           family={Langó},
+           familyi={L\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+        {{hash=eaf9ab910bda9dd77d4c7195cb50b8e2}{%
+           family={Gyimóthy},
+           familyi={G\bibinitperiod},
+           given={Tibor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{20fd2b39bcd2397640b6a767c9dffb60}
+      \strng{fullhash}{7ebddb2a543c02eaeb1ca0b70bd7bc89}
+      \strng{bibnamehash}{20fd2b39bcd2397640b6a767c9dffb60}
+      \strng{authorbibnamehash}{20fd2b39bcd2397640b6a767c9dffb60}
+      \strng{authornamehash}{20fd2b39bcd2397640b6a767c9dffb60}
+      \strng{authorfullhash}{7ebddb2a543c02eaeb1ca0b70bd7bc89}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 28th IEEE International Conference on Software Maintenance (ICSM)}
+      \field{title}{Code coverage-based regression test selection and prioritization in WebKit}
+      \field{year}{2012}
+      \field{pages}{46\bibrangedash 55}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICSM.2012.6405252
+      \endverb
+    \endentry
+    \entry{10.1109/ICSE.2019.00055}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f9d65ea2b55bceb90fe1d37188adb9d3}{%
+           family={Cruciani},
+           familyi={C\bibinitperiod},
+           given={Emilio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0acacf5e56d0e3204cbe0dacb716d33d}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={Breno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4d23e663e30fa5d4fc080424134aec7b}{%
+           family={Verdecchia},
+           familyi={V\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e8357287c911b8280c512d18b071f1bc}{%
+           family={Bertolino},
+           familyi={B\bibinitperiod},
+           given={Antonia},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Montreal, Quebec, Canada}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Press}%
+      }
+      \strng{namehash}{54f49a188ec13759730f7df8b0584a44}
+      \strng{fullhash}{f4a48e6a9cd77a2c196d2278d42c5629}
+      \strng{bibnamehash}{54f49a188ec13759730f7df8b0584a44}
+      \strng{authorbibnamehash}{54f49a188ec13759730f7df8b0584a44}
+      \strng{authornamehash}{54f49a188ec13759730f7df8b0584a44}
+      \strng{authorfullhash}{f4a48e6a9cd77a2c196d2278d42c5629}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 41st International Conference on Software Engineering}
+      \field{series}{ICSE '19}
+      \field{title}{Scalable Approaches for Test Suite Reduction}
+      \field{year}{2019}
+      \field{pages}{419\bibrangedash 429}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/ICSE.2019.00055
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/ICSE.2019.00055
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/ICSE.2019.00055
+      \endverb
+      \keyw{clustering,similarity-based testing,test suite reduction,random projection,software testing}
+    \endentry
+    \entry{MAHDIEH2020106269}{article}{}
+      \name{author}{5}{}{%
+        {{hash=12aa08ec7a07407da0ce2e9eb6c87e69}{%
+           family={Mahdieh},
+           familyi={M\bibinitperiod},
+           given={Mostafa},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fbc1dabbe2799813f36fe72cef9527e3}{%
+           family={Mirian-Hosseinabadi},
+           familyi={M\bibinithyphendelim H\bibinitperiod},
+           given={Seyed-Hassan},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=a9ada2385f7858cabdbb0f9d6cc2e11c}{%
+           family={Etemadi},
+           familyi={E\bibinitperiod},
+           given={Khashayar},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c2d4acbac321a9b964dc5bd7dea5ed08}{%
+           family={Nosrati},
+           familyi={N\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6a579b3c10e3cd670b3d7f74b3ad305f}{%
+           family={Jalali},
+           familyi={J\bibinitperiod},
+           given={Sajad},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d57c156394332acb3201b190e695104a}
+      \strng{fullhash}{5d2721533e806ef82e5823461439c179}
+      \strng{bibnamehash}{d57c156394332acb3201b190e695104a}
+      \strng{authorbibnamehash}{d57c156394332acb3201b190e695104a}
+      \strng{authornamehash}{d57c156394332acb3201b190e695104a}
+      \strng{authorfullhash}{5d2721533e806ef82e5823461439c179}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0950-5849}
+      \field{journaltitle}{Information and Software Technology}
+      \field{title}{Incorporating fault-proneness estimations into coverage-based test case prioritization methods}
+      \field{volume}{121}
+      \field{year}{2020}
+      \field{pages}{106269}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.infsof.2020.106269
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0950584920300197
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0950584920300197
+      \endverb
+    \endentry
+    \entry{10.1145/3180155.3180210}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=0acacf5e56d0e3204cbe0dacb716d33d}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={Breno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f9d65ea2b55bceb90fe1d37188adb9d3}{%
+           family={Cruciani},
+           familyi={C\bibinitperiod},
+           given={Emilio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4d23e663e30fa5d4fc080424134aec7b}{%
+           family={Verdecchia},
+           familyi={V\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e8357287c911b8280c512d18b071f1bc}{%
+           family={Bertolino},
+           familyi={B\bibinitperiod},
+           given={Antonia},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Gothenburg, Sweden}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{2b3cfd8c27703d737656941934be9a5f}
+      \strng{fullhash}{0d4ac0fd76ea9ee07ad8b2f6cc3b43cb}
+      \strng{bibnamehash}{2b3cfd8c27703d737656941934be9a5f}
+      \strng{authorbibnamehash}{2b3cfd8c27703d737656941934be9a5f}
+      \strng{authornamehash}{2b3cfd8c27703d737656941934be9a5f}
+      \strng{authorfullhash}{0d4ac0fd76ea9ee07ad8b2f6cc3b43cb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 40th International Conference on Software Engineering}
+      \field{isbn}{9781450356381}
+      \field{series}{ICSE '18}
+      \field{title}{FAST Approaches to Scalable Similarity-Based Test Case Prioritization}
+      \field{year}{2018}
+      \field{pages}{222\bibrangedash 232}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1145/3180155.3180210
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3180155.3180210
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3180155.3180210
+      \endverb
+    \endentry
+    \entry{Pan2021TestCS}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3acacc1f684ef378918a00ece495d31b}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Rong},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a4e20b68e8ed25600e9f0b94283a5c00}{%
+           family={Bagherzadeh},
+           familyi={B\bibinitperiod},
+           given={Mojtaba},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0b0b83a609744739af7cc1d0ea2935c1}{%
+           family={Ghaleb},
+           familyi={G\bibinitperiod},
+           given={Taher\bibnamedelima Ahmed},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c44b165fe1fe29877e377751b8d1e1a1}{%
+           family={Briand},
+           familyi={B\bibinitperiod},
+           given={Lionel\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0b9704cba8535f7f0f6516d28b31fa6}
+      \strng{fullhash}{b7581d637199f8a2daec0882ba4151ce}
+      \strng{bibnamehash}{c0b9704cba8535f7f0f6516d28b31fa6}
+      \strng{authorbibnamehash}{c0b9704cba8535f7f0f6516d28b31fa6}
+      \strng{authornamehash}{c0b9704cba8535f7f0f6516d28b31fa6}
+      \strng{authorfullhash}{b7581d637199f8a2daec0882ba4151ce}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv}
+      \field{title}{Test Case Selection and Prioritization Using Machine Learning: A Systematic Literature Review}
+      \field{volume}{abs/2106.13891}
+      \field{year}{2021}
+    \endentry
+    \entry{962562}{article}{}
+      \name{author}{4}{}{%
+        {{hash=79299f0902f0f6cf31012ff81fad6fa7}{%
+           family={Rothermel},
+           familyi={R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=376233406e1da067b463c2133f8b3ae1}{%
+           family={Untch},
+           familyi={U\bibinitperiod},
+           given={R.H.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d6e181f1c477b2d0bb23fabb64f45bef}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Chengyun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d47f11361102c89cb46f0164d512d112}{%
+           family={Harrold},
+           familyi={H\bibinitperiod},
+           given={M.J.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c700d4f6a9fb4083407d9d913f37324c}
+      \strng{fullhash}{cd708b676c59eb366d52b410ac44489e}
+      \strng{bibnamehash}{c700d4f6a9fb4083407d9d913f37324c}
+      \strng{authorbibnamehash}{c700d4f6a9fb4083407d9d913f37324c}
+      \strng{authornamehash}{c700d4f6a9fb4083407d9d913f37324c}
+      \strng{authorfullhash}{cd708b676c59eb366d52b410ac44489e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Software Engineering}
+      \field{number}{10}
+      \field{title}{Prioritizing test cases for regression testing}
+      \field{volume}{27}
+      \field{year}{2001}
+      \field{pages}{929\bibrangedash 948}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/32.962562
+      \endverb
+    \endentry
+    \entry{Yoo2009RegressionTM}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c6e3219567063628b0aa746e69b26412}{%
+           family={Yoo},
+           familyi={Y\bibinitperiod},
+           given={Shin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1a97225992fa23f818d9b1269df83035}{%
+           family={Harman},
+           familyi={H\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{01db2f61f6d604ea8b737a46c8795584}
+      \strng{fullhash}{01db2f61f6d604ea8b737a46c8795584}
+      \strng{bibnamehash}{01db2f61f6d604ea8b737a46c8795584}
+      \strng{authorbibnamehash}{01db2f61f6d604ea8b737a46c8795584}
+      \strng{authornamehash}{01db2f61f6d604ea8b737a46c8795584}
+      \strng{authorfullhash}{01db2f61f6d604ea8b737a46c8795584}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Regression Testing Minimisation, Selection and Prioritisation - A Survey}
+      \field{year}{2009}
+    \endentry
+  \enddatalist
+  \missing{TODO}
+\endrefsection
+\endinput
+
