@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  14 DEC 2021 01:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.30)  15 DEC 2021 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\nonstopmode\input main.tex
-(./main.tex (/usr/share/texmf-dist/tex/latex/base/article.cls
+**main.tex
+(./main.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
@@ -357,104 +360,109 @@ LaTeX Info: Redefining \nameref on input line 12.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/diff.png, id=144, 595.22375pt x 214.8025pt>
+<images/diff.png, id=149, 595.22375pt x 214.8025pt>
 File: images/diff.png Graphic file (type png)
 <use images/diff.png>
-Package pdftex.def Info: images/diff.png  used on input line 37.
+Package pdftex.def Info: images/diff.png  used on input line 41.
 (pdftex.def)             Requested size: 345.0pt x 124.5003pt.
  [2 <./images/diff.png>]
-<images/alpage.png, id=156, 357.83687pt x 154.07562pt>
+<images/alpage.png, id=159, 357.83687pt x 154.07562pt>
 File: images/alpage.png Graphic file (type png)
 <use images/alpage.png>
-Package pdftex.def Info: images/alpage.png  used on input line 60.
+Package pdftex.def Info: images/alpage.png  used on input line 65.
 (pdftex.def)             Requested size: 156.49014pt x 67.38205pt.
-<images/altable.png, id=157, 373.395pt x 165.11688pt>
+<images/altable.png, id=160, 373.395pt x 165.11688pt>
 File: images/altable.png Graphic file (type png)
 <use images/altable.png>
-Package pdftex.def Info: images/altable.png  used on input line 62.
+Package pdftex.def Info: images/altable.png  used on input line 67.
 (pdftex.def)             Requested size: 156.49014pt x 69.19995pt.
-<images/alcodeunit.png, id=159, 327.72438pt x 251.94125pt>
+<images/alcodeunit.png, id=162, 327.72438pt x 251.94125pt>
 File: images/alcodeunit.png Graphic file (type png)
 <use images/alcodeunit.png>
-Package pdftex.def Info: images/alcodeunit.png  used on input line 69.
+Package pdftex.def Info: images/alcodeunit.png  used on input line 74.
 (pdftex.def)             Requested size: 345.0pt x 265.2227pt.
  [3 <./images/alpage.png> <./images/altable.png>]
-<images/altestcodeunit.png, id=173, 300.62312pt x 113.42375pt>
+<images/altestcodeunit.png, id=177, 300.62312pt x 113.42375pt>
 File: images/altestcodeunit.png Graphic file (type png)
 <use images/altestcodeunit.png>
-Package pdftex.def Info: images/altestcodeunit.png  used on input line 78.
+Package pdftex.def Info: images/altestcodeunit.png  used on input line 83.
 (pdftex.def)             Requested size: 156.49014pt x 59.04471pt.
-<images/altestscenario.png, id=174, 351.3125pt x 191.71625pt>
+<images/altestscenario.png, id=178, 351.3125pt x 191.71625pt>
 File: images/altestscenario.png Graphic file (type png)
 <use images/altestscenario.png>
-Package pdftex.def Info: images/altestscenario.png  used on input line 80.
+Package pdftex.def Info: images/altestscenario.png  used on input line 85.
 (pdftex.def)             Requested size: 156.49014pt x 85.39975pt.
 
-[4 <./images/alcodeunit.png>]
-Underfull \hbox (badness 2495) in paragraph at lines 106--106
-[][][]\OT1/cmr/m/n/8 These changes were not work of the au-thor, but from Nikol
-a Kukrika niko-
- []
-
-[5 <./images/altestcodeunit.png> <./images/altestscenario.png>]
-<images/erdiagram.png, id=192, 379.4175pt x 201.45262pt>
+[4 <./images/alcodeunit.png>] [5 <./images/altestcodeunit.png> <./images/altest
+scenario.png>]
+<images/erdiagram.png, id=197, 379.4175pt x 201.45262pt>
 File: images/erdiagram.png Graphic file (type png)
 <use images/erdiagram.png>
-Package pdftex.def Info: images/erdiagram.png  used on input line 114.
+Package pdftex.def Info: images/erdiagram.png  used on input line 119.
 (pdftex.def)             Requested size: 345.0pt x 183.18076pt.
- [6 <./images/erdiagram.png>] [7]
-<images/addinglinechange.png, id=214, 649.42625pt x 104.39pt>
+ [6 <./images/erdiagram.png>] [7] [8]
+<images/addinglinechange.png, id=225, 649.42625pt x 104.39pt>
 File: images/addinglinechange.png Graphic file (type png)
 <use images/addinglinechange.png>
-Package pdftex.def Info: images/addinglinechange.png  used on input line 168.
+Package pdftex.def Info: images/addinglinechange.png  used on input line 179.
 (pdftex.def)             Requested size: 345.0pt x 55.45703pt.
- [8 <./images/addinglinechange.png>]
-<images/testselection.png, id=227, 624.3325pt x 186.6975pt>
+ [9 <./images/addinglinechange.png>]
+<images/testselection.png, id=236, 624.3325pt x 186.6975pt>
 File: images/testselection.png Graphic file (type png)
 <use images/testselection.png>
-Package pdftex.def Info: images/testselection.png  used on input line 200.
+Package pdftex.def Info: images/testselection.png  used on input line 211.
 (pdftex.def)             Requested size: 345.0pt x 103.16823pt.
- [9] [10 <./images/testselection.png>] [11] [12] [13] [14] [15] [16] [17] [18]
-Underfull \hbox (badness 2856) in paragraph at lines 422--425
+ [10 <./images/testselection.png>] [11] [12] [13] [14] [15] [16]
+[17] [18] [19]
+! Extra }, or forgotten \endgroup.
+l.433 }
+       
+? 
+
+Underfull \hbox (badness 2856) in paragraph at lines 441--444
 []\OT1/cmr/m/n/10 Besz^^Sedes, []Arp^^Sad and Gergely, Tam^^Sas and Schret-tner
 , La-jos and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--430
+Underfull \hbox (badness 10000) in paragraph at lines 446--449
 []\OT1/cmr/m/n/10 Mostafa Mahdieh and Seyed-Hassan Mirian-Hosseinabadi and
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 427--430
+Underfull \hbox (badness 2088) in paragraph at lines 446--449
 \OT1/cmr/m/n/10 Khasha-yar Etemadi and Ali Nos-rati and Sa-jad Jalali, \OT1/cmr
 /m/it/10 In-cor-po-rat-
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 427--430
+Underfull \hbox (badness 6063) in paragraph at lines 446--449
 \OT1/cmr/m/it/10 ing fault-proneness es-ti-ma-tions into coverage-based test ca
 se pri-
  []
 
 
-Underfull \hbox (badness 6078) in paragraph at lines 427--430
+Underfull \hbox (badness 6078) in paragraph at lines 446--449
 \OT1/cmr/m/it/10 or-i-ti-za-tion meth-ods\OT1/cmr/m/n/10 , In-for-ma-tion and S
 oft-ware Tech-nol-ogy, 2020,
  []
 
-[19] [20] (./main.aux)
+! Extra }, or forgotten \endgroup.
+l.467 }
+       
+? 
+[20] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D97230ECE0E8939376F5BE04D2A88137;6112.
+(rerunfilecheck)             Checksum: D2F4635B4F513E7AD0EC9205EA6D675D;6112.
  ) 
 Here is how much of TeX's memory you used:
- 9964 strings out of 478994
- 150734 string characters out of 5864751
- 459564 words of memory out of 5000000
- 27250 multiletter control sequences out of 15000+600000
+ 9969 strings out of 478994
+ 150827 string characters out of 5864751
+ 459678 words of memory out of 5000000
+ 27253 multiletter control sequences out of 15000+600000
  410269 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,10n,79p,967b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,10n,79p,947b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -470,10 +478,10 @@ s/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
 s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (20 pages, 409986 bytes).
+Output written on main.pdf (20 pages, 414618 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 340 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
  302 words of extra memory for PDF output out of 10000 (max. 10000000)
 
